@@ -2,29 +2,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-//    Contacto prueba = new Contacto("Pedro Hernandez",3500000000L);
-//    Contacto prueba2 = new Contacto("Camilo Perez",3501111111L);
-//    Contacto prueba3 = new Contacto("Camilo",3500111111L);
-//    Contacto prueba5 = new Contacto("Camilo Prueba",3500111111L);
-//    System.out.println(prueba.getNombre());
-//    System.out.println(prueba.getNumero());
-//    System.out.println(Long.parseLong("3500000000"));
-//    Agenda agenda = new Agenda();
-//    System.out.println(agenda.getTamanio());
-//    agenda.anadirContacto(prueba);
-//    agenda.anadirContacto(prueba2);
-//    agenda.anadirContacto(prueba2);
-//    agenda.anadirContacto(prueba3);
-//    agenda.listarContactos();
-//    agenda.buscaContacto("Camilo");
-//    agenda.eliminarContacto(prueba3);
-//    agenda.listarContactos();
-//    agenda.eliminarContacto(prueba5);
-//    agenda.existeContacto(prueba2);
-//    agenda.espaciosLibres();
-
     // Menu
-
     Scanner sc = new Scanner(System.in);
     System.out.println("Tienes 10 espacios en la agenda telefonica, deseas cambiar el tamaño: 1(Si), 2(No): ");
     int opcion = sc.nextInt();
@@ -73,7 +51,6 @@ public class Main {
           System.out.println();
           break;
         case 3:
-          System.out.println("La lista telefonica es: ");
           agenda.listarContactos();
           System.out.println();
           break;

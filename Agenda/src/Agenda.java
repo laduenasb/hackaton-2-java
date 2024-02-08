@@ -41,11 +41,16 @@ public class Agenda {
   // Mostrar contactos
 
   public void listarContactos(){
-    for(int i=0; i<Contactos.size(); i++) {
-      System.out.println("Contacto "+(i+1));
-      System.out.println("Nombre: " + Contactos.keySet().toArray()[i]);
-      System.out.println("Número: " + Contactos.values().toArray()[i]);
-      System.out.println();
+    if(Contactos.size()==0){
+      System.out.println("La lista de contactos esta vacia");
+    } else{
+      System.out.println("La lista telefonica es: ");
+      for(int i=0; i<Contactos.size(); i++) {
+        System.out.println("Contacto "+(i+1));
+        System.out.println("Nombre: " + Contactos.keySet().toArray()[i]);
+        System.out.println("Número: " + Contactos.values().toArray()[i]);
+        System.out.println();
+      }
     }
   }
 
